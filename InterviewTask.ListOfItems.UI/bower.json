@@ -1,0 +1,9 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "angular": "1.6.6",
+    "angular-route": "1.6.6",
+    "angular-utils-pagination": "0.11.1" 
+  }
+}

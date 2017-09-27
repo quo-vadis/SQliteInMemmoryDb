@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewTask.ListOfItems.UI", "InterviewTask.ListOfItems.UI\InterviewTask.ListOfItems.UI.csproj", "{B0BF7083-FCB3-4339-A627-58227B5B28F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewTask.ListOfItems.WebApi", "InterviewTask.ListOfItems.WebApi\InterviewTask.ListOfItems.WebApi.csproj", "{795DD9AF-6D90-4157-BBAD-E725352C5ED4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B0BF7083-FCB3-4339-A627-58227B5B28F6} = {B0BF7083-FCB3-4339-A627-58227B5B28F6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0BF7083-FCB3-4339-A627-58227B5B28F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0BF7083-FCB3-4339-A627-58227B5B28F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0BF7083-FCB3-4339-A627-58227B5B28F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0BF7083-FCB3-4339-A627-58227B5B28F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{795DD9AF-6D90-4157-BBAD-E725352C5ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{795DD9AF-6D90-4157-BBAD-E725352C5ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{795DD9AF-6D90-4157-BBAD-E725352C5ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{795DD9AF-6D90-4157-BBAD-E725352C5ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9BABE64-17B1-477C-B8A3-45A552FF6243}
+	EndGlobalSection
+EndGlobal

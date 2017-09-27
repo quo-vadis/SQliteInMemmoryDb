@@ -1,0 +1,92 @@
+﻿table {
+    border-collapse: collapse;
+    width: 540px;
+    margin: 0 auto;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: #777;
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    min-width: 600px;
+    height: 600px;
+    margin: 20px auto;
+    border: 1px solid #222;
+}
+
+ul.buttons {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background: lightgray;
+}
+
+ul.buttons li{
+    float: left;
+}
+
+.buttons li a {
+    display: block;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+ul.buttons li a:hover:not(.active) {
+    opacity: 0.5;
+    background-color: whitesmoke;
+}
+
+ul.buttons li a.active {
+    background-color: #4CAF50;
+}
+
+.title {
+    text-align: center;
+}
+
+.addItem {
+    margin: 30px auto;
+    width: 540px;
+}
+
+.addItem input {
+    width: 170px;
+}
+
+input.btn-rigth {
+    align-content: right;
+}
+
+.submitted .ng-invalid{
+    border: 1px solid red;
+}
+
+ul.pagination {
+    list-style-type: none;
+    margin: 0 auto;
+    width: 200px;
+    padding: 0;
+    overflow: hidden;
+}
+
+    ul.pagination li {
+        float: left;
+        margin: 5px;
+    }

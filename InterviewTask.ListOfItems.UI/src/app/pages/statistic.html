@@ -1,0 +1,13 @@
+﻿<h2 class="title">{{vm.title}}</h2>
+
+<table>
+    <tr>
+        <th>Item Type</th>
+        <th>Count</th>
+    </tr>
+    <tr dir-paginate="item in vm.typeList | itemsPerPage: 3" pagination-id="itemsStatsPagination">
+        <td>{{item.name}}</td>
+        <td>{{item.count}}</td>
+    </tr>
+</table>
+<dir-pagination-controls max-size="7" pagination-id="itemsStatsPagination" template-url="../bower_components/angular-utils-pagination/dirPagination.tpl.html"></dir-pagination-controls>

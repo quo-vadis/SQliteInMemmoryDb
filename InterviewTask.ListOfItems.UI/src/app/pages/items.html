@@ -1,0 +1,34 @@
+﻿<div>
+    <h2 class="title">{{vm.title}}</h2>
+    
+    <div class="addItem">
+        <h4>add new item</h4>
+        <form method="post" name="ItemForm" ng-submit="vm.save()">
+            <input type="text" name="item.Name" placeholder="Item name" ng-model="vm.item.Name" required/>
+            <input type="text" name="item.Type" placeholder="Item type" ng-model="vm.item.Type" required/>
+            <input ng-disabled="ItemForm.$invalid" class="btn-rigth" type="submit" value="{{vm.inputButton}}"/>
+        </form>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr dir-paginate="item in vm.items  | itemsPerPage: 4" pagination-id="itemsPagination">
+            <td>{{item.Name}}</td>
+            <td>{{item.Type}}</td>
+            <td>
+                <input type="button" value="delete" ng-click="vm.delete(item.Id)"/>
+                <input type="button" value="edit" ng-click="vm.edit(item.Id)"/>
+            </td>
+        </tr>
+       </tbody>
+    </table>
+    <dir-pagination-controls max-size="7"  pagination-id="itemsPagination" template-url="../bower_components/angular-utils-pagination/dirPagination.tpl.html"></dir-pagination-controls>
+</div>
+  
